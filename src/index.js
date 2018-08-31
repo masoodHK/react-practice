@@ -22,7 +22,7 @@ class App extends Component {
 
     this.reverseInput = this.reverseInput.bind(this);
     this.addText = this.addText.bind(this);
-    this.addText = this.addText.bind(this);
+    this.toggleVisibility = this.toggleVisibility.bind(this);
   }
   reverseInput(event) {
     this.setState({
