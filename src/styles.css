@@ -3,9 +3,21 @@
 }
 
 .visible {
-  visibility:visible;
+  visibility: visible;
+}
+
+button {
+  background: rgba(233, 189, 94, 0.767);
+  border: none;
+  padding: 1% 2%;
+}
+
+input {
+  padding: 0.6% 2%;
+  border: 0;
+  border-bottom: 1px solid black;
 }
 
 .invisible {
-  visibility: hidden
+  visibility: hidden;
 }
