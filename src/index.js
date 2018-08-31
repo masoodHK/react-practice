@@ -6,11 +6,13 @@ import "./styles.css";
 class App extends Component{
   constructor(props) {
     super(props);
+
     this.state = {
       input: "",
       reverseString: "",
       textArray: [],
     }
+    
     this.reverseInput = this.reverseInput.bind(this);
     this.addText = this.addText.bind(this);
     this.addText = this.addText.bind(this);
@@ -27,7 +29,7 @@ class App extends Component{
 
     textArray.push({
       input,
-      date: (new Date()).toDateString(),
+      date: (new Date()).toLocaleTimeString() + " " + (new Date()).toLocaleDateString(),
       isVisible: true,
     });
 
@@ -59,8 +61,8 @@ class App extends Component{
         <ul>
           {textArray.map((text, index) => {
             return <li key={index}>
-              <span>{text.input} Created at: {text.date} </span>
-                <button onClick={() => this.toggleVisibility(index)}>{text.isVisible? "Show": "Hide"}</button>
+              <span className={text.isVisible? "visible": "invisible"}>{text.input} Created at: {text.date} </span>
+                <button onClick={() => this.toggleVisibility(index)}>{text.isVisible? "Hide": "Show"}</button>
               </li>
           })}
         </ul>
