@@ -2,10 +2,14 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 import "./styles.css";
-// React App for the following tasks
-// 1) Reverse the fiven input
-// 2) Add the input to the given text
-// 3) Toggle the visibility of the text
+/*
+React App for the following tasks
+
+1) Reverse the fiven input
+2) Add the input to the given text
+3) Toggle the visibility of the text
+
+*/
 class App extends Component {
   constructor(props) {
     super(props);
